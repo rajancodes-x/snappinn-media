@@ -38,7 +38,7 @@
 .work-card-pink:hover{transform:translateY(-7px) rotate(.35deg)}
 .rule-card i{transition:color .25s,transform .25s}.rule-card:hover i{color:#68aaa1;transform:translate(3px,-3px)}
 .contact.is-in-view .contact-star{opacity:.13;transition:opacity .8s ease}
-.contact.is-in-view h2 em{animation:accent-pop .7s .1s both}
+.contact.is-in-view .contact h2 em{animation:accent-pop .7s .1s both}
 .reveal-ready .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1);transition-delay:var(--reveal-delay,0ms)}
 .reveal-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
 @keyframes accent-pop{0%{filter:saturate(.4);transform:translateY(8px)}100%{filter:saturate(1);transform:translateY(0)}}
@@ -79,7 +79,7 @@ body{background:var(--paper)}
 .availability i{background:#4c9b7b;box-shadow:0 0 0 4px rgba(76,155,123,.16)}
 .ticker{background:var(--lime)}
 .manifesto{position:relative;overflow:hidden;background:linear-gradient(125deg,#ffede4 0%,#fff0e8 53%,#f8e6f1 100%)}
-.manifesto::after{content:"\2733\FE0E";position:absolute;right:-40px;bottom:-150px;color:rgba(231,124,104,.09);font-size:390px;line-height:1;transform:rotate(-12deg);pointer-events:none}
+.manifesto::after{content:"✳";position:absolute;right:-40px;bottom:-150px;color:rgba(231,124,104,.09);font-size:390px;line-height:1;transform:rotate(-12deg);pointer-events:none}
 .manifesto-grid,.manifesto>.section-label{position:relative;z-index:1}
 .manifesto.is-in-view h2 em{color:#bb5548}
 .services{background:radial-gradient(ellipse at 85% 10%,rgba(117,91,169,.25),transparent 32%),#29243d;color:#fffaf0}
@@ -134,7 +134,7 @@ body{background:var(--paper)}
 @keyframes snappi-hang-hover{0%,100%{transform:rotate(-.8deg)}20%{transform:rotate(4deg)}43%{transform:rotate(-3.1deg)}67%{transform:rotate(1.8deg)}86%{transform:rotate(-.6deg)}}
 @keyframes ear-flick-left{from{transform:rotate(-5deg)}to{transform:rotate(8deg)}}
 @keyframes ear-flick-right{from{transform:rotate(6deg)}to{transform:rotate(-8deg)}}
-.snappi-panel{position:fixed;z-index:40;right:24px;top:50%;transform:translateY(-50%);width:min(365px,calc(100vw - 32px));height:min(520px,calc(100svh - 32px));background:var(--paper);border:1px solid var(--ink);box-shadow:10px 12px 0 rgba(23,24,21,.14);display:flex;flex-direction:column;color:var(--ink)}.snappi-panel[hidden]{display:none}.snappi-head{display:flex;align-items:center;justify-content:space-between;padding:20px 20px 16px;border-bottom:1px solid var(--line);background:var(--lime)}.snappi-kicker,.snappi-demo-note{font:8px var(--mono);letter-spacing:.07em}.snappi-head h2{margin:5px 0 0;font-size:30px;letter-spacing:-.07em}.snappi-head h2 span{font-size:17px}.snappi-close{width:34px;height:34px;border:1px solid var(--ink);background:transparent;font-size:24px;line-height:1;cursor:pointer}.snappi-messages{padding:20px;overflow:auto;flex:1}.snappi-message{font-size:14px;line-height:1.5;margin:0 0 15px;padding:13px 14px;max-width:92%;background:#e7e4dc}.snappi-message-user{margin-left:auto;background:var(--ink);color:var(--paper)}.snappi-message-bot{border-left:3px solid var(--lime)}.snappi-demo-note{display:block;color:var(--muted);line-height:1.5}.snappi-form{padding:14px;border-top:1px solid var(--line);display:flex;gap:8px}.snappi-form input{flex:1;min-width:0;border:1px solid var(--line);background:#fffdf8;padding:12px;font:12px var(--display);color:var(--ink)}.snappi-form input:focus{outline:2px solid var(--ink);outline-offset:1px}.snappi-form button{width:44px;border:0;background:var(--ink);color:var(--lime);font-size:20px;cursor:pointer}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.snappi-panel{position:fixed;z-index:40;right:24px;top:50%;transform:translateY(-50%);width:min(365px,calc(100vw - 32px));height:min(520px,calc(100svh - 32px));background:var(--paper);border:1px solid var(--ink);box-shadow:10px 12px 0 rgba(23,24,21,.14);display:flex;flex-direction:column;color:var(--ink)}.snappi-panel[hidden]{display:none}.snappi-head{display:flex;align-items:center;justify-content:space-between;padding:20px 20px 16px;border-bottom:1px solid var(--line);background:var(--lime)}.snappi-kicker{font:8px var(--mono);letter-spacing:.07em}.snappi-head h2{margin:5px 0 0;font-size:30px;letter-spacing:-.07em}.snappi-head h2 span{font-size:17px}.snappi-close{width:34px;height:34px;border:1px solid var(--ink);background:transparent;font-size:24px;line-height:1;cursor:pointer}.snappi-form-embed{flex:1;min-height:0;overflow:auto;background:var(--paper)}.snappi-form-embed iframe{display:block;width:100%;height:100%;min-height:360px;border:0;background:var(--paper)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:650px){.mascot-note{font-size:6px}.snappi-panel{right:12px;top:auto;bottom:12px;transform:none;height:min(480px,calc(100svh - 24px))}}
 @media(prefers-reduced-motion:reduce){.snappi-suspension,.mascot-stage.is-hovering .snappi-suspension,.mascot-trigger:hover .mascot-ear-left,.mascot-trigger:hover .mascot-ear-right,.mascot-trigger:focus-visible .mascot-ear-left,.mascot-trigger:focus-visible .mascot-ear-right{animation:none!important}.mascot-trigger,.mascot{transition:none!important}}
 
@@ -146,37 +146,6 @@ body{background:var(--paper)}
 @keyframes logo-pushback{0%,100%{transform:translateY(0) scale(1)}24%{transform:translateY(-.5px) scale(1.012,.99)}40%{transform:translateY(.2px) scale(.995,1.005)}62%{transform:translateY(0) scale(1)}}
 @media(max-width:650px){.company-logo{width:130px;height:47px}.company-logo-footer{width:148px;height:54px}}
 @media(prefers-reduced-motion:reduce){.company-logo-piece{animation:none!important;will-change:auto}}
-/* Responsive fixes: decorations and motion follow the layout on every screen size. */
-.no-break{white-space:nowrap}
-/* Ticker: the track is as wide as its content, so translateX(-50%) is exactly one group on any screen. */
-.ticker-track{display:flex;width:max-content;animation:marquee var(--ticker-duration,60s) linear infinite}
-.ticker-group{display:flex;flex:none;white-space:nowrap}
-/* Glow circle sits behind the mascot wherever the mascot ends up (position set by script). */
-.hero.has-glow::before{left:var(--glow-x);top:var(--glow-y);right:auto;width:var(--glow-size);height:var(--glow-size);transform:translate(-50%,-50%)}
-/* Chat note: reset leftovers from older rules, then place it beside or under the mascot. */
-.mascot-note{right:auto;bottom:auto}
-.mascot-stage.note-below .mascot-note{left:0;top:calc(var(--cord-length) - var(--mascot-top-overlap) + var(--mascot-size)*1.1 + 6px);transform:translateX(-50%) rotate(-3deg)}
-@media(max-width:650px){
-  /* Scale the headline with the screen so "MAKE THEM" fits on one line and the mascot hangs clear of "STOP." */
-  .hero h1{font-size:clamp(44px,17.5vw,122px);line-height:.82}
-  .hero-title-wrap{min-height:clamp(340px,52svh,570px);padding-top:12svh}
-  .mascot-note{font-size:7px}
-}
-/* Paragraph sits in normal flow under the headline, so the two can never overlap.
-   Headline size also respects screen height (short laptop screens, browser zoom). */
-.hero-title-wrap{flex-direction:column;align-items:flex-start;justify-content:center}
-.hero h1{font-size:clamp(64px,min(15vw,27svh),225px)}
-.hero-copy{position:static;margin-top:clamp(24px,5svh,56px)}
-/* iPhone/iPad show the ✳ star as a green emoji tile; force the plain text glyph everywhere. */
-body,.ticker-track b,.asterisk,.sunburst,.contact-star,.manifesto::after,.snappi-head h2 span{font-variant-emoji:text}
-/* Phones turned sideways: size the headline by screen height so the hero fits. */
-@media(orientation:landscape) and (max-height:520px){
-  .hero{min-height:auto}
-  .hero-title-wrap{min-height:0;flex-direction:column;align-items:flex-start;padding:5svh 0 3svh}
-  .hero h1{font-size:clamp(48px,24svh,150px)}
-  .hero-copy{position:static;margin-top:32px;width:min(300px,45%)}
-}
-
   </style>
   <script type="application/ld+json">
   {
@@ -205,12 +174,12 @@ body,.ticker-track b,.asterisk,.sunburst,.contact-star,.manifesto::after,.snappi
   <main id="top">
     <section class="hero section-pad">
       <div class="hero-topline"><span>INDEPENDENT CREATIVE &amp; DIGITAL GROWTH STUDIO</span><span class="availability"><i></i> OPEN FOR GOOD PROJECTS</span></div>
-      <div class="hero-title-wrap"><svg class="piercing-back" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="hoop-outline" d="M0 50 C0 22 22 0 50 0 C78 0 100 22 100 50"/><path class="hoop-metal" d="M0 50 C0 22 22 0 50 0 C78 0 100 22 100 50"/></svg><h1>MAKE <span class="no-break">THE<span class="them-anchor" id="them-anchor">M</span></span><br><span class="title-second">STOP<span class="period">.</span></span></h1>
+      <div class="hero-title-wrap"><svg class="piercing-back" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="hoop-outline" d="M0 50 C0 22 22 0 50 0 C78 0 100 22 100 50"/><path class="hoop-metal" d="M0 50 C0 22 22 0 50 0 C78 0 100 22 100 50"/></svg><h1>MAKE THE<span class="them-anchor" id="them-anchor">M</span><br><span class="title-second">STOP<span class="period">.</span></span></h1>
         <div class="mascot-stage" aria-label="Snappi mascot hanging from the M">
           <svg class="piercing-front" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path class="hoop-outline" d="M0 50 C0 78 22 100 50 100 C78 100 100 78 100 50"/><path class="hoop-metal" d="M0 50 C0 78 22 100 50 100 C78 100 100 78 100 50"/></svg>
           <div class="snappi-suspension">
             <span class="mascot-string" aria-hidden="true"></span>
-            <button class="mascot-trigger" type="button" aria-label="Open Snappi, the site helper" aria-haspopup="dialog" aria-controls="snappi-panel"><svg class="mascot" viewBox="0 0 250 275" role="img" aria-label="A playful lime-green character">
+            <button class="mascot-trigger" type="button" aria-label="Open Snappi’s enquiry form" aria-haspopup="dialog" aria-controls="snappi-panel"><svg class="mascot" viewBox="0 0 250 275" role="img" aria-label="A playful lime-green character">
               <path class="mascot-shadow" d="M54 248c17-9 53-14 81-12 30 2 49 8 64 17-29 13-113 16-145-5Z"/>
               <path class="mascot-body" d="M46 190c-2-34 10-73 39-95 10-8 23-12 37-12 15 0 29 6 39 16 24 23 36 57 34 91-2 28-20 47-48 52-31 5-67 0-85-17-11-10-15-20-16-35Z"/>
               <path class="mascot-ear mascot-ear-left" d="m72 103-14-31c-3-7 5-13 12-9l34 19M166 83l23-24c5-5 13-1 12 6l-2 37"/>
@@ -220,7 +189,7 @@ body,.ticker-track b,.asterisk,.sunburst,.contact-star,.manifesto::after,.snappi
               <path class="mascot-foot" d="M85 239c-12 5-19 10-18 16 1 5 16 5 31 3m68-22c12 1 23 6 23 12s-13 8-29 5"/>
               <path class="spark" d="m39 130 8 4-8 4-4 8-4-8-8-4 8-4 4-8 4 8Zm177-51 6 3-6 3-3 6-3-6-6-3 6-3 3-6 3 6Z"/>
             </svg></button>
-            <span class="mascot-note">CLICK TO CHAT <b>↗</b></span>
+            <span class="mascot-note">CLICK TO ENQUIRE <b>↗</b></span>
           </div>
         </div>
 
@@ -229,8 +198,8 @@ body,.ticker-track b,.asterisk,.sunburst,.contact-star,.manifesto::after,.snappi
       <div class="hero-actions"><a class="button button-dark" href="#contact">LET’S MAKE A SCENE <span>↗</span></a><a class="text-link" href="#work">TAKE A LOOK AROUND <span>↓</span></a></div>
       <div class="hero-bottom"><span>SCROLL A LITTLE. STAY A WHILE.</span><span>SOCIAL&nbsp; · &nbsp;CONTENT&nbsp; · &nbsp;GROWTH&nbsp; · &nbsp;BRAND</span><span>INDEPENDENT BY DESIGN&nbsp; ↘</span></div>
     </section>
-    <section class="ticker" aria-label="Our approach"><p class="sr-only">Less noise, more feeling, better internet.</p><div class="ticker-track" aria-hidden="true"><div class="ticker-group"><span>LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> &nbsp;</span></div><div class="ticker-group"><span>LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> LESS NOISE <b>✳︎</b> MORE FEELING <b>✳︎</b> BETTER INTERNET <b>✳︎</b> &nbsp;</span></div></div></section>
-    <section class="manifesto section-pad" id="about"><div class="section-label"><span>01 / A SMALL INTRO</span><span>WHY SNAPPINN?</span></div><div class="manifesto-grid"><h2>THE INTERNET<br>HAS ENOUGH<br><em>CONTENT.</em></h2><div class="manifesto-aside"><span class="asterisk">✳︎</span><p>Your brand doesn’t need more. It needs <strong>better.</strong></p><p class="body-copy">We bring strategy, sharp creative and a little healthy obsession together—so the right people notice, remember and do something about it.</p><a class="arrow-link" href="#process">GET TO KNOW OUR WAY <span>↗</span></a></div></div></section>
+    <section class="ticker" aria-label="Our approach"><div class="ticker-track"><span>LESS NOISE <b>✳</b> MORE FEELING <b>✳</b> BETTER INTERNET <b>✳</b> LESS NOISE <b>✳</b> MORE FEELING <b>✳</b> BETTER INTERNET <b>✳</b></span></div></section>
+    <section class="manifesto section-pad" id="about"><div class="section-label"><span>01 / A SMALL INTRO</span><span>WHY SNAPPINN?</span></div><div class="manifesto-grid"><h2>THE INTERNET<br>HAS ENOUGH<br><em>CONTENT.</em></h2><div class="manifesto-aside"><span class="asterisk">✳</span><p>Your brand doesn’t need more. It needs <strong>better.</strong></p><p class="body-copy">We bring strategy, sharp creative and a little healthy obsession together—so the right people notice, remember and do something about it.</p><a class="arrow-link" href="#process">GET TO KNOW OUR WAY <span>↗</span></a></div></div></section>
     <section class="services section-pad" id="services"><div class="section-label"><span>02 / WHAT WE DO</span><span>GOOD WORK, GOOD REASONS</span></div><div class="services-head"><h2>WHAT WE<br><span>SNAP.</span></h2><p>Small team energy.<br>Big picture thinking.<br>No copy-paste playbooks.</p></div>
       <div class="service-list">
         <article class="service-row"><span class="service-number">01</span><button class="service-trigger" type="button" aria-expanded="false" aria-controls="service-detail-01"><span class="service-trigger-copy"><span class="service-name">SOCIAL</span><span class="service-pitch">Make them follow.</span></span><span class="service-arrow" aria-hidden="true">+</span></button><div class="service-detail" id="service-detail-01" hidden><p>Build a social presence people want to come back to—from a clear channel strategy to the day-to-day conversations.</p><span>STRATEGY · CALENDARS · COMMUNITY · CHANNEL MANAGEMENT</span></div></article>
@@ -240,19 +209,20 @@ body,.ticker-track b,.asterisk,.sunburst,.contact-star,.manifesto::after,.snappi
       </div>
     </section>
     <section class="work section-pad" id="work"><div class="section-label"><span>03 / PROOF OF PLAY</span><span>GOOD THINGS ARE IN THE WORKS</span></div><div class="work-head"><h2>MADE TO<br><em>MAKE WAVES.</em></h2><p>Thoughtful work deserves a little spotlight.<br>Our first stories are coming soon.</p></div>
-      <div class="work-grid"><article class="work-card work-card-lime"><span class="card-index">CASE FILE 001</span><div class="case-graphic graphic-one"><div class="sunburst">✳︎</div><span>GOOD<br>ENERGY<br>ONLY.</span></div><div class="case-info"><span>BRAND CAMPAIGN · COMING SOON</span><b>THE NEXT BIG THING <i>↗</i></b></div></article><article class="work-card work-card-pink"><span class="card-index">CASE FILE 002</span><div class="case-graphic graphic-two"><div class="phone-shape"><span class="phone-dot"></span><span>SCROLL<br>STOPPER</span><b>▶</b></div><span class="hand-note">made you<br>look ↗</span></div><div class="case-info"><span>SOCIAL &amp; CONTENT · COMING SOON</span><b>ON YOUR FEED <i>↗</i></b></div></article></div>
+      <div class="work-grid"><article class="work-card work-card-lime"><span class="card-index">CASE FILE 001</span><div class="case-graphic graphic-one"><div class="sunburst">✳</div><span>GOOD<br>ENERGY<br>ONLY.</span></div><div class="case-info"><span>BRAND CAMPAIGN · COMING SOON</span><b>THE NEXT BIG THING <i>↗</i></b></div></article><article class="work-card work-card-pink"><span class="card-index">CASE FILE 002</span><div class="case-graphic graphic-two"><div class="phone-shape"><span class="phone-dot"></span><span>SCROLL<br>STOPPER</span><b>▶</b></div><span class="hand-note">made you<br>look ↗</span></div><div class="case-info"><span>SOCIAL &amp; CONTENT · COMING SOON</span><b>ON YOUR FEED <i>↗</i></b></div></article></div>
       <p class="work-footnote">Early days. Real ambition. Case studies added as we make them.</p>
     </section>
     <section class="rules section-pad"><div class="section-label"><span>04 / THE VIBE CHECK</span><span>OUR VERY SHORT RULEBOOK</span></div><div class="rules-layout"><h2>GOOD WORK.<br>GOOD PEOPLE.<br><em>NO WEIRD STUFF.</em></h2><div class="rule-cards"><div class="rule-card"><span>01</span><p>Curiosity over<br>“that’s how it’s done.”</p><i>↗</i></div><div class="rule-card"><span>02</span><p>Clear beats clever.<br>(But why not both?)</p><i>↗</i></div><div class="rule-card"><span>03</span><p>Make it matter.<br>Make it human.</p><i>↗</i></div></div></div></section>
     <section class="process section-pad" id="process"><div class="section-label"><span>05 / HOW IT HAPPENS</span><span>NO MYSTERY. NO MEETINGS ABOUT MEETINGS.</span></div><h2>A GOOD THING<br>GOES LIKE <em>THIS.</em></h2><div class="process-steps"><article><span>01 / LISTEN</span><h3>First, the real talk.</h3><p>We get to know your people, your business and what “better” actually looks like.</p></article><article><span>02 / THINK</span><h3>Find the sharp idea.</h3><p>We build the strategy and creative direction around the opportunity—not a template.</p></article><article><span>03 / MAKE</span><h3>Make it, make it matter.</h3><p>We create, launch and learn in the real world. Then make the next thing even better.</p></article></div></section>
-    <section class="contact section-pad" id="contact"><div class="contact-star" aria-hidden="true">✳︎</div><span class="contact-kicker">GOT A GOOD ONE?</span><h2>LET’S MAKE<br><em>SOME NOISE.</em></h2><p>Tell us what you’re dreaming up. We’re all ears, tabs and ideas. Creative and digital growth for businesses in Chandigarh, Mohali and Panchkula.</p><a class="button button-lime" href="mailto:hello@snappinnmedia.in?subject=Let%E2%80%99s%20make%20something%20good">HELLO@SNAPPINNMEDIA.IN <span>↗</span></a><span class="contact-foot">NO DECK REQUIRED. JUST SAY HI.</span></section>
+    <section class="contact section-pad" id="contact"><div class="contact-star" aria-hidden="true">✳</div><span class="contact-kicker">GOT A GOOD ONE?</span><h2>LET’S MAKE<br><em>SOME NOISE.</em></h2><p>Tell us what you’re dreaming up. We’re all ears, tabs and ideas. Creative and digital growth for businesses in Chandigarh, Mohali and Panchkula.</p><a class="button button-lime" href="mailto:hello@snappinnmedia.in?subject=Let%E2%80%99s%20make%20something%20good">HELLO@SNAPPINNMEDIA.IN <span>↗</span></a><span class="contact-foot">NO DECK REQUIRED. JUST SAY HI.</span></section>
   </main>
   <footer class="site-footer"><a class="footer-brand" href="#top" aria-label="SNAPPINN MEDIA home"><span class="company-logo company-logo-footer" role="img" aria-label="SNAPPINN MEDIA logo"><span class="company-logo-piece company-logo-left"></span><span class="company-logo-piece company-logo-center"></span><span class="company-logo-piece company-logo-right"></span><span class="company-logo-piece company-logo-media"></span></span></a><span class="footer-tag">MAKE THEM STOP.</span><div class="footer-links"><a href="https://instagram.com/snappinnmedia" target="_blank" rel="noreferrer">INSTAGRAM ↗</a><a href="https://www.youtube.com/channel/UCjF3DDPIZjXnEVKL0XVcqlQ" target="_blank" rel="noreferrer">YOUTUBE ↗</a></div><span class="copyright">© <span id="year">2026</span> SNAPPINN MEDIA · MADE WITH INTENTION IN INDIA</span><a class="back-top" href="#top">BACK TO TOP ↑</a></footer>
 
   <section class="snappi-panel" id="snappi-panel" role="dialog" aria-modal="false" aria-labelledby="snappi-title" aria-hidden="true" hidden>
-    <div class="snappi-head"><div><span class="snappi-kicker">YOUR LITTLE IDEA PARTNER</span><h2 id="snappi-title">Snappi <span aria-hidden="true">✳︎</span></h2></div><button class="snappi-close" type="button" aria-label="Close Snappi">×</button></div>
-    <div class="snappi-messages" id="snappi-messages" aria-live="polite"><p class="snappi-message snappi-message-bot">Hey! I’m Snappi 👋 Need a hand finding the right service, exploring an idea, or getting in touch with the team?</p><span class="snappi-demo-note">DEMO MODE · CONNECT AN AI API TO ENABLE LIVE ANSWERS</span></div>
-    <form class="snappi-form" id="snappi-form"><label class="sr-only" for="snappi-input">Message Snappi</label><input id="snappi-input" name="message" type="text" placeholder="Ask me something…" autocomplete="off" maxlength="500"><button type="submit" aria-label="Send message">↗</button></form>
+    <div class="snappi-head"><div><span class="snappi-kicker">YOUR LITTLE IDEA PARTNER</span><h2 id="snappi-title">Snappi <span aria-hidden="true">✳</span></h2></div><button class="snappi-close" type="button" aria-label="Close Snappi">×</button></div>
+    <div class="snappi-form-embed">
+      <iframe id="snappi-form-frame" src="https://docs.google.com/forms/d/e/1FAIpQLSdi7XG3vEPoA9Rxoqv-H7h7IztfiW3WOz6-Sp6B5NqQGdDXLA/viewform?embedded=true" title="Snappinn Media enquiry form" loading="lazy" tabindex="0">Your browser does not support embedded forms. <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi7XG3vEPoA9Rxoqv-H7h7IztfiW3WOz6-Sp6B5NqQGdDXLA/viewform">Open the enquiry form</a>.</iframe>
+    </div>
   </section>
   <script defer>
 const menuButton = document.querySelector('.menu-toggle');
@@ -359,20 +329,16 @@ const piercingBack = document.querySelector('.piercing-back');
 const piercingFront = document.querySelector('.piercing-front');
 const assistant = document.querySelector('#snappi-panel');
 const assistantClose = document.querySelector('.snappi-close');
-const assistantInput = document.querySelector('#snappi-input');
-const assistantForm = document.querySelector('#snappi-form');
-const assistantMessages = document.querySelector('#snappi-messages');
+const assistantFrame = document.querySelector('#snappi-form-frame');
 let lastMascotTrigger = null;
-const heroSection = document.querySelector('.hero');
-const mascotNote = document.querySelector('.mascot-note');
-const measureContext = document.createElement('canvas').getContext('2d');
 const positionMascot = () => {
   if (!mascotStage || !mascotAnchor || !piercingBack || !piercingFront) return;
   const anchorBox = mascotAnchor.getBoundingClientRect();
   const parentBox = mascotStage.parentElement.getBoundingClientRect();
   const textStyle = window.getComputedStyle(mascotAnchor);
   const fontSize = Number.parseFloat(textStyle.fontSize) || 120;
-  const context = measureContext;
+  const canvas = document.createElement('canvas');
+  const context = canvas.getContext('2d');
   let ascent = fontSize * .72;
   let descent = 0;
   let inkRight = anchorBox.width;
@@ -394,10 +360,7 @@ const positionMascot = () => {
   const radiusX = Math.max(8, fontSize * .11);
   const radiusY = Math.max(10, fontSize * .13);
   const cordLength = Math.max(22, Math.min(38, fontSize * .15));
-  const heroBox = (heroSection || mascotStage.parentElement).getBoundingClientRect();
-  // Never let the mascot poke past the right edge of the hero on narrow screens.
-  const roomRight = heroBox.right - anchorBox.left - inkRight + rightLegStroke * .48 - 6;
-  const mascotSize = Math.max(48, Math.min(112, Math.max(56, fontSize * .5), roomRight * 2));
+  const mascotSize = Math.max(74, Math.min(112, fontSize * .5));
   const ringStroke = Math.max(2, Math.min(2.5, fontSize * .011));
 
   mascotStage.style.left = `${pointX - parentBox.left}px`;
@@ -415,48 +378,10 @@ const positionMascot = () => {
   });
   piercingBack.style.left = `${pointX - parentBox.left}px`;
   piercingBack.style.top = `${pointY - parentBox.top}px`;
-
-  // Put "CLICK TO CHAT" under the mascot when there isn't room beside it.
-  if (mascotNote) {
-    const noteRight = pointX + mascotSize * .42 + mascotNote.offsetWidth + 10;
-    mascotStage.classList.toggle('note-below', noteRight > heroBox.right);
-  }
-
-  // Keep the glow circle behind the mascot instead of at a fixed spot on the screen.
-  if (heroSection) {
-    const glowSize = Math.max(120, mascotSize * 2.4);
-    heroSection.style.setProperty('--glow-size', `${glowSize}px`);
-    heroSection.style.setProperty('--glow-x', `${Math.min(pointX - heroBox.left + glowSize * .32, heroBox.width - glowSize * .35)}px`);
-    heroSection.style.setProperty('--glow-y', `${pointY - heroBox.top - glowSize * .2}px`);
-    heroSection.classList.add('has-glow');
-  }
 };
-
-// Ticker: same speed on every screen, whatever the text width.
-const tickerTrack = document.querySelector('.ticker-track');
-const sizeTicker = () => {
-  const group = tickerTrack?.querySelector('.ticker-group');
-  if (!group) return;
-  const pixelsPerSecond = 45;
-  tickerTrack.style.setProperty('--ticker-duration', `${Math.max(20, group.offsetWidth / pixelsPerSecond)}s`);
-};
-
-// Re-measure once per frame whenever anything that affects layout changes.
-let layoutFrame = 0;
-const scheduleLayout = () => {
-  cancelAnimationFrame(layoutFrame);
-  layoutFrame = requestAnimationFrame(() => { positionMascot(); sizeTicker(); });
-};
-scheduleLayout();
-window.addEventListener('resize', scheduleLayout, { passive: true });
-window.addEventListener('orientationchange', scheduleLayout);
-window.visualViewport?.addEventListener('resize', scheduleLayout, { passive: true });
-if ('ResizeObserver' in window) {
-  const layoutObserver = new ResizeObserver(scheduleLayout);
-  [heroSection, mascotStage?.parentElement, document.querySelector('.hero h1'), tickerTrack].forEach((el) => el && layoutObserver.observe(el));
-}
-if (document.fonts?.ready) document.fonts.ready.then(scheduleLayout);
-window.addEventListener('load', scheduleLayout);
+positionMascot();
+window.addEventListener('resize', positionMascot, { passive: true });
+if (document.fonts?.ready) document.fonts.ready.then(positionMascot);
 mascotButton?.addEventListener('pointerenter', (event) => {
   if (event.pointerType !== 'touch') mascotStage?.classList.add('is-hovering');
 });
@@ -468,7 +393,7 @@ const openAssistant = () => {
   lastMascotTrigger = document.activeElement;
   assistant.hidden = false;
   assistant.setAttribute('aria-hidden', 'false');
-  assistantInput?.focus();
+  assistantFrame?.focus();
 };
 const closeAssistant = () => {
   if (!assistant) return;
@@ -479,24 +404,6 @@ const closeAssistant = () => {
 mascotButton?.addEventListener('click', openAssistant);
 assistantClose?.addEventListener('click', closeAssistant);
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && assistant && !assistant.hidden) closeAssistant(); });
-assistantForm?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const value = assistantInput.value.trim();
-  if (!value) return;
-  const userMessage = document.createElement('p');
-  userMessage.className = 'snappi-message snappi-message-user';
-  userMessage.textContent = value;
-  assistantMessages.insertBefore(userMessage, assistantMessages.querySelector('.snappi-demo-note'));
-  const reply = document.createElement('p');
-  reply.className = 'snappi-message snappi-message-bot';
-  reply.textContent = /service|social|content|brand|growth/i.test(value) ? 'We can help with social, content, growth and brand. Take a look at “What we do” or tell the team what you have in mind.' : 'Thanks for the note! I’m a preview assistant for now. You can explore the site or reach the team at hello@snappinnmedia.in.';
-  assistantMessages.insertBefore(reply, assistantMessages.querySelector('.snappi-demo-note'));
-  assistantInput.value = '';
-  assistantMessages.scrollTop = assistantMessages.scrollHeight;
-  assistantInput.focus();
-});
-
-
 const updateScrollProgress = () => {
   const scrollableHeight = document.documentElement.scrollHeight - window.innerHeight;
   const progress = scrollableHeight > 0 ? (window.scrollY / scrollableHeight) * 100 : 0;
